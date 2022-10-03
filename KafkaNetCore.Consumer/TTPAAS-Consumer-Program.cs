@@ -13,7 +13,7 @@ namespace TT.PAAS.Consumer.Program
         {
             var consumergroup = Environment.GetEnvironmentVariable("CONSUMER_GROUP");
             var topicName = Environment.GetEnvironmentVariable("TOPIC_NAME");
-            var brokerList = Environment.GetEnvironmentVariable("KAFKA_URL");
+            var kafkaURL = Environment.GetEnvironmentVariable("KAFKA_URL");
             
             var config = new ConsumerConfig {
                 BootstrapServers = kafkaURL,
