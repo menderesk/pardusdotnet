@@ -14,8 +14,16 @@ namespace TT.PAAS.Consumer.Program
             var consumergroup = Environment.GetEnvironmentVariable("CONSUMER_GROUP");
             var topicName = Environment.GetEnvironmentVariable("TOPIC_NAME");
             var brokerList = Environment.GetEnvironmentVariable("KAFKA_URL");
-
-            var config = new ConsumerConfig { GroupId = consumergroup, BootstrapServers = brokerList};
+            
+            var config = new ConsumerConfig {
+                BootstrapServers = kafkaURL,
+                SecurityProtocol = SecurityProtocol.SaslPlaintext,
+                //SslCaLocation = "ca-cert",
+                SaslMechanism = SaslMechanism.Plain,
+                SaslUsername = saslUserName,
+                SaslPassword = saslPassword,
+                ClientId = consumergroup;
+            };
 
             using (var consumer = new ConsumerBuilder<string, string>(config).Build())
             {
