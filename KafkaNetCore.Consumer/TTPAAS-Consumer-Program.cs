@@ -14,6 +14,8 @@ namespace TT.PAAS.Consumer.Program
             var consumergroup = Environment.GetEnvironmentVariable("CONSUMER_GROUP");
             var topicName = Environment.GetEnvironmentVariable("TOPIC_NAME");
             var kafkaURL = Environment.GetEnvironmentVariable("KAFKA_URL");
+            string saslUserName = Environment.GetEnvironmentVariable ("SASL_USERNAME");
+            string saslPassword = Environment.GetEnvironmentVariable ("SASL_PASSWORD");
             
             var config = new ConsumerConfig {
                 BootstrapServers = kafkaURL,
