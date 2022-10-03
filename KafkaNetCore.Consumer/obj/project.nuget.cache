@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "imokKXJRNezbFpRGe3i+XtwMlYkY1WsQCME6lV6PqEjBeHQF5ZOTKpqRz1HdlAJQSyI35VvcwtXRqLHgDTnN9A==",
+  "success": true,
+  "projectFilePath": "/home/menderes/Downloads/kafka/KafkaNetCore/KafkaNetCore.Consumer/KafkaNetCore.Consumer.csproj",
+  "expectedPackageFiles": [
+    "/home/menderes/.nuget/packages/confluent.kafka/1.9.0/confluent.kafka.1.9.0.nupkg.sha512",
+    "/home/menderes/.nuget/packages/librdkafka.redist/1.9.0/librdkafka.redist.1.9.0.nupkg.sha512",
+    "/home/menderes/.nuget/packages/system.memory/4.5.0/system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

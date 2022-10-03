@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/menderes/Downloads/kafka/KafkaNetCore/KafkaNetCore.Producer/KafkaNetCore.Producer.csproj": {}
+  },
+  "projects": {
+    "/home/menderes/Downloads/kafka/KafkaNetCore/KafkaNetCore.Producer/KafkaNetCore.Producer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/menderes/Downloads/kafka/KafkaNetCore/KafkaNetCore.Producer/KafkaNetCore.Producer.csproj",
+        "projectName": "KafkaNetCore.Producer",
+        "projectPath": "/home/menderes/Downloads/kafka/KafkaNetCore/KafkaNetCore.Producer/KafkaNetCore.Producer.csproj",
+        "packagesPath": "/home/menderes/.nuget/packages/",
+        "outputPath": "/home/menderes/Downloads/kafka/KafkaNetCore/KafkaNetCore.Producer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/menderes/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
